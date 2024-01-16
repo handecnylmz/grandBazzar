@@ -1,3 +1,6 @@
 Feature: Login Scenario
-  Scenario: Login
-    Given User go to "https://www.amazon.com"
+  Scenario: Login User
+    Given User go to "userUrl"
+
+  Scenario: Login Admin
+    Given User go to "AdminUrl"

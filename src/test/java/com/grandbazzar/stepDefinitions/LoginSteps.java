@@ -8,7 +8,7 @@ public class LoginSteps {
 
     @Given("User go to {string}")
     public void user_go_to(String string) {
-        Driver.get().get(string);
+        Driver.get().get(ConfigurationReader.getProperty(string));
 
     }
 
