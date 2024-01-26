@@ -31,6 +31,13 @@ public class LoginPage {
     @FindBy(xpath = "//img[@alt='profile']")
     public WebElement profileImg;
 
+
+    @FindBy(xpath = "//span[.='Invalid email address']")
+    public WebElement invalidEmailMsg;
+
+    @FindBy(xpath = "//span[.='Password must be at least 8 characters']")
+    public WebElement invalidPasswordMsg;
+
     public void loginAsUser(){
 
         emailBox.sendKeys(ConfigurationReader.getProperty("userEmail"));
