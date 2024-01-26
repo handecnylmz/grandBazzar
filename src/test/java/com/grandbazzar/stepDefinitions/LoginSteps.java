@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 
 public class LoginSteps {
 
@@ -60,6 +61,47 @@ public class LoginSteps {
         Assert.assertTrue(loginPage.adminDashboardLink.isDisplayed());
     }
 
+    // ---------- NEGATIVE -------------
 
+    @When("user enters invalid email such as {string}")
+    public void user_enters_invalid_email_such_as(String invalidEmail) {
 
+        loginPage.emailBox.sendKeys(invalidEmail);
+    }
+    @When("enters password less than eight characters")
+    public void enters_password_less_than_eight_characters() {
+
+        loginPage.passwordBox.sendKeys("12345");
+    }
+    @Then("user clicks login button and warning messages should be displayed")
+    public void user_clicks_login_button_and_warning_messages_should_be_displayed() {
+
+        loginPage.loginBtn.click();
+        Assert.assertTrue(loginPage.invalidEmailMsg.isDisplayed());
+        Assert.assertTrue(loginPage.invalidPasswordMsg.isDisplayed());
+
+    }
+
+    @When("user enters {string}")
+    public void user_enters(String email) {
+
+        loginPage.emailBox.sendKeys(email);
+    }
+    @When("enters {string}")
+    public void enters(String passw) {
+
+        loginPage.passwordBox.sendKeys(passw);
+    }
+    @Then("user clicks login button")
+    public void user_clicks_login_button() {
+
+        loginPage.loginBtn.click();
+        ReusableMethods.wait(5);
+    }
+    @Then("should close the pop up in order to login again")
+    public void should_close_the_pop_up_in_order_to_login_again() {
+
+       Alert alert = Driver.get().switchTo().alert();
+       alert.accept();
+    }
 }
