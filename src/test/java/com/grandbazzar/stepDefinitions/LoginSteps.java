@@ -3,6 +3,7 @@ import com.grandbazzar.pages.LoginPage;
 import com.grandbazzar.utilities.ConfigurationReader;
 import com.grandbazzar.utilities.Driver;
 import com.grandbazzar.utilities.ReusableMethods;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
