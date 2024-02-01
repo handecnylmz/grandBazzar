@@ -181,5 +181,4 @@ public class ReusableMethods {
         }
         return listOfStrings;
     }
-
 }

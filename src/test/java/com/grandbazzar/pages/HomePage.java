@@ -13,6 +13,9 @@ import javax.xml.xpath.XPath;
 import java.time.Duration;
 
 public class HomePage {
+
+
+
      public    HomePage(){
 
      PageFactory.initElements(Driver.get(),this);
@@ -43,6 +46,7 @@ public class HomePage {
 
 
     }
+
 
 
 }
