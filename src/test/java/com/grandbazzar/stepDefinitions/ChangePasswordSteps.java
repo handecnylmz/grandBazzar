@@ -68,12 +68,6 @@ public class ChangePasswordSteps {
         System.out.println("Successful message = " + changePasswordPage.changeSuccessfullyMsg.getText());
     }
 
-//    @When("user enters new password but doesn't confirm that password")
-//    public void user_enters_new_password_but_doesn_t_confirm_that_password() {
-//
-//        changePasswordPage.newPasswordBox.sendKeys("abcd1234");
-//    }
-
     @When("user enters {string} as a new password but doesn't confirm that password")
     public void user_enters_as_a_new_password_but_doesn_t_confirm_that_password(String newPassw) {
 
