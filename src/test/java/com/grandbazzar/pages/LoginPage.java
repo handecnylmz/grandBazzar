@@ -31,6 +31,8 @@ public class LoginPage {
     @FindBy(xpath = "//img[@alt='profile']")
     public WebElement profileImg;
 
+    @FindBy(xpath = "//span[.='Profile']")
+    public WebElement profileLink;
 
     @FindBy(xpath = "//span[.='Invalid email address']")
     public WebElement invalidEmailMsg;
