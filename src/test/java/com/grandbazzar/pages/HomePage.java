@@ -47,7 +47,8 @@ public class HomePage {
 
     }
 
-
+    @FindBy(xpath = "//img[contains(@srcset,'Cizi')]")
+    public WebElement productCiziCracker;
 
 }
 
