@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ChangePasswordPage {
 
+
     public ChangePasswordPage(){
 
         PageFactory.initElements(Driver.get(),this);
@@ -32,6 +33,7 @@ public class ChangePasswordPage {
 
     @FindBy(xpath = "//label[.='Confirm Password']/following-sibling::span")
     public WebElement confirmPassWarningMsg;
+
 
 
 
