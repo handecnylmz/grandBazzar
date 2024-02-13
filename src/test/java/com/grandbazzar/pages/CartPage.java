@@ -1,4 +1,4 @@
 package com.grandbazzar.pages;
 
-public class RegisterPage {
+public class CartPage {
 }
