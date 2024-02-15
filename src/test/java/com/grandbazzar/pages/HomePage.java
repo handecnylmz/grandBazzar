@@ -1,15 +1,12 @@
 package com.grandbazzar.pages;
 
-import com.grandbazzar.stepDefinitions.SearchBoxSteps;
 import com.grandbazzar.utilities.Driver;
 import com.grandbazzar.utilities.ReusableMethods;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.xml.xpath.XPath;
 import java.time.Duration;
 
 public class HomePage {

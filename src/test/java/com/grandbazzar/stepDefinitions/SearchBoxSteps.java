@@ -15,16 +15,11 @@ public class SearchBoxSteps {
 
    HomePage hp=new HomePage();
 
-
-
     @Given("users goes  to SearchBox")
     public void SearchBox() {
     hp.SearchBox.click();
 
-
     }
-
-
     @And("clicks on the search lens")
     public void clicksOnTheSearchLens() {
 
